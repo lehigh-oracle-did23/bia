@@ -1,7 +1,7 @@
 // api.ts
 import axios from 'axios';
 
-const apiUrl = `${process.env.LOGIN_API_URL}`;
+const apiUrl = `https://idcs-8076696250a94dc8b6b2f8cefa28e425.identity.oraclecloud.com/admin/v1/HTTPAuthenticator`;
 
 export async function authenticateUser(authToken: string, username: string, password: string) {
   const credentials = `${username}:${password}`;

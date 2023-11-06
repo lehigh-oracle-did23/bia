@@ -1,9 +1,9 @@
 // tokenApi.ts
 import axios from 'axios';
 
-const tokenUrl = `${process.env.TOKEN_API_URL}`;
-const clientId = `${process.env.TOKEN_CLIENT_ID}`;
-const clientSecret = `${process.env.TOKEN_CLIENT_SECRET}`;
+const tokenUrl = `https://idcs-8076696250a94dc8b6b2f8cefa28e425.identity.oraclecloud.com/oauth2/v1/token`;
+const clientId = `e4af37ff5973413e9c0dbc1267712a8c`;
+const clientSecret = `4dcdebd1-b0e4-4724-9b38-2e101f7dada9`;
 
 export async function generateBearerToken() {
   const data = new URLSearchParams();
